@@ -1,4 +1,4 @@
-# my_cheat_sheet
+# My Cheat Sheet
 
 ## Git commands I am using often
 initialize local repository
