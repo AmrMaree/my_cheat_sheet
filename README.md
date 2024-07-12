@@ -108,3 +108,8 @@ Exit sqlite
 ```
 .exit
 ```
+##
+Generate random 32 bit hexadecimal number
+```
+openssl rand -hex 32
+```
