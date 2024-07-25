@@ -95,6 +95,10 @@ Show table structure
 ```
 DESCRIBE table_name;
 ```
+Grant access to user on database
+```
+GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost';
+```
 Exit MySQL
 ```
 exit
