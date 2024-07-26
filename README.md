@@ -120,6 +120,11 @@ Exit sqlite
 ```
 .exit
 ```
+## Alembic commands
+Create migration enviroment
+```
+alembic init alembic
+```
 ##
 Generate random 32 bit hexadecimal number
 ```
