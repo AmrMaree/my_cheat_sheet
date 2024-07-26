@@ -99,6 +99,10 @@ Grant access to user on database
 ```
 GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost';
 ```
+Know the port mysql is working on
+```
+SHOW GLOBAL VARIABLES LIKE 'PORT';
+```
 Exit MySQL
 ```
 exit
