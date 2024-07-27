@@ -143,11 +143,15 @@ alembic history
 ```
 Upgrades the database
 ```
-alembic upgrade head / migration id / +[number of steps]
+alembic upgrade head / [migration id] / +[number of steps]
 ```
 Downgrade the database
 ```
-alembic downgrade base / migration id / -[number of steps]
+alembic downgrade base / [migration id] / -[number of steps]
+```
+Marking a database migration as current
+```
+alembic stamp [migration id]
 ```
 ##
 Generate random 32 bit hexadecimal number
