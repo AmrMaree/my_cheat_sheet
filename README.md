@@ -125,6 +125,30 @@ Create migration enviroment
 ```
 alembic init alembic
 ```
+Generating a base empty migration
+```
+alembic revision -m "message"
+```
+Autogenerating the migration
+```
+alembic revision --autogenerate -m "message"
+```
+Determine what the last migration applied to the database
+```
+alembic current
+```
+Shows every step from our initial empty migration to our current migration
+```
+alembic history
+```
+Upgrades the database
+```
+alembic upgrade head / migration id / +[number of steps]
+```
+Downgrade the database
+```
+alembic downgrade base / migration id / -[number of steps]
+```
 ##
 Generate random 32 bit hexadecimal number
 ```
