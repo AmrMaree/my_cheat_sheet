@@ -153,6 +153,16 @@ Marking a database migration as current
 ```
 alembic stamp [migration id]
 ```
+## React commands
+Create a react app
+```
+npx create-react-app my-react-app
+```
+Start the react app
+```
+npm start
+```
+
 ##
 Generate random 32 bit hexadecimal number
 ```
