@@ -27,7 +27,14 @@ git branch
 ``` 
 
 ## Postgres commands in linux
-
+Connect to postgres user
+```
+sudo -u postgres psql
+```
+Change the password of user
+```
+ALTER USER user_name PASSWORD 'newpassword';
+```
 Connect to database under specific user
 ```
 psql -h host -d database -U user -p port_number -W
