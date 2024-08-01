@@ -174,7 +174,7 @@ Create a custom configuration file
 ```bash
 sudo nano /etc/nginx/sites-available/your_domain
 ```
-Configuration file content
+Configuration file content to write
 ```nginx
 server {
     listen 80;
