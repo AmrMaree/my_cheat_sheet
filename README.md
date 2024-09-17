@@ -29,7 +29,7 @@ Know the branch you are connected to
 ```bash
 git branch
 ``` 
-Change to another branch
+Connect to another branch
 ```bash
 git checkout [branch name]
 ```
