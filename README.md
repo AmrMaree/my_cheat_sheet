@@ -1,30 +1,42 @@
 # My Cheat Sheet
 
 ## Git commands I am using often
-initialize local repository
+Initialize local repository
 ```bash
 git init
 ```
-add files
+Add files
 ```bash
 git add .
 ```
-commit files
+Commit files
 ```bash
 git commit -m "commit description"
 ```
-push files to github
+Push files to github
 ```bash
-git push origin "branch name"
+git push origin [branch name]
+```
+Pull files from github
+```bash
+git pull origin [branch name]
 ```
 Create new branch
 ```bash
-git checkout -b "new_branch_name"
+git checkout -b [new branch name]
 ```
 Know the branch you are connected to
 ```bash
 git branch
 ``` 
+Change to another branch
+```bash
+git checkout [branch name]
+```
+Merge with another branch
+```bash
+git merge [other branch]
+```
 
 ## Postgres commands in linux
 Connect to postgres user
