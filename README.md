@@ -215,6 +215,11 @@ sudo nginx -t
 ```bash
 sudo service nginx restart
 ```
+## WSL commands
+Tells you distrubution name 
+```bash
+lsb_release -a
+```
 ## Other useful commands
 Generate random 32 bit hexadecimal number
 ```bash
