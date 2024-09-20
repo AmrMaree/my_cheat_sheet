@@ -216,9 +216,43 @@ sudo nginx -t
 sudo service nginx restart
 ```
 ## WSL commands
+List your installed WSL distributions
+```bash
+wsl --list --verbose || wsl -l -v
+```
+Restart WSL
+```bash
+wsl --shutdown
+wsl
+```
 Tells you distrubution name 
 ```bash
 lsb_release -a
+```
+## Move WSL from one drive to another
+List your installed WSL distributions
+```bash
+wsl --list --verbose
+```
+Export your desired distribution (e.g., Ubuntu-20.04) to a file on the drive you want to move to (e.g., D:\\)
+```bash
+wsl --export Ubuntu-20.04 D:\wsl\ubuntu.tar
+```
+Unregister the current WSL distribution
+```bash
+wsl --unregister Ubuntu-20.04
+```
+Create a directory on the D: drive where you want to store the WSL files
+```bash
+mkdir D:\wsl\ubuntu
+```
+Import the distribution from the exported file
+```bash
+wsl --import Ubuntu-20.04 D:\wsl\ubuntu D:\wsl\ubuntu.tar
+```
+Start your WSL distribution to ensure it’s working correctly
+```bash
+wsl -d Ubuntu-20.04
 ```
 ## Other useful commands
 Generate random 32 bit hexadecimal number
