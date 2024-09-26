@@ -5,23 +5,31 @@ Initialize local repository
 ```bash
 git init
 ```
-Add files
+Add a remote repository
+```bash
+git remote add origin [repository url]
+```
+Stage changes for the next commit
 ```bash
 git add .
 ```
-Commit files
+Commit staged changes
 ```bash
 git commit -m "commit description"
 ```
-Push files to github
+Push changes to a remote repository
 ```bash
 git push origin [branch name]
 ```
-Pull files from github
+Pull changes from a remote repository
 ```bash
 git pull origin [branch name]
 ```
-Create new branch
+Create new branch but doesn't switch to it
+```bash
+git branch [branch name]
+```
+Create new branch and switches to it
 ```bash
 git checkout -b [new branch name]
 ```
@@ -29,13 +37,26 @@ Know the branch you are connected to
 ```bash
 git branch
 ``` 
-Connect to another branch
+Switch to another branch
 ```bash
 git checkout [branch name]
+```
+Check the status of your files
+```bash
+git status
+```
+Clone an existing repository
+```bash
+git clone [repository url]
 ```
 Merge with another branch
 ```bash
 git merge [other branch]
+```
+Configure user information
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
 ```
 
 ## Postgres commands in linux
