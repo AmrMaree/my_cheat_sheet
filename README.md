@@ -1,6 +1,6 @@
 # My Cheat Sheet
 
-## Git commands I am using often
+## Git commands
 Initialize local repository
 ```bash
 git init
