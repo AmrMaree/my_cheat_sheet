@@ -275,6 +275,138 @@ Start your WSL distribution to ensure it’s working correctly
 ```bash
 wsl -d Ubuntu-20.04
 ```
+## 🐍 NumPy
+Import NumPy
+```python
+import numpy as np
+```
+Creates a 1D array from a list
+```python
+arr1 = np.array([1, 2, 3])
+```
+Creates a 2D array (matrix) from a nested list
+```python
+arr2 = np.array([[1, 2], [3, 4]])
+```
+Creates a 3x3 array filled with zeros   
+```python
+zeros = np.zeros((3, 3))
+```
+Creates a 2x2 array filled with ones
+```python
+ones = np.ones((2, 2))
+```
+Creates a 3x3 array with random integers between 0 and 9
+```python
+random_arr = np.random.randint(0, 10, size=(3, 3))
+```
+Array Operations
+```python
+arr = np.array([1, 2, 3])
+arr_sum = arr + 10       # Adds 10 to each element.
+arr_product = arr * 2    # Multiplies each element by 2.
+```
+Element-wise Operations
+```python
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+sum_arr = arr1 + arr2   # Adds corresponding elements.
+dot_product = np.dot(arr1, arr2)   # Computes the dot product of two arrays.
+arr_T = arr2.T   # Transposes a 2D array 
+```
+Indexing and Slicing
+```python
+arr = np.array([1, 2, 3, 4, 5])
+first_element = arr[0]    # Access the first element.
+last_element = arr[-1]    # Access the last element.
+slice_arr = arr[1:4]      # Access elements from index 1 to 3.
+```
+Statistical Functions
+```python
+arr = np.array([1, 2, 3, 4, 5])
+mean = np.mean(arr)       # Calculates the mean of the array.
+median = np.median(arr)   # Calculates the median of the array.
+std = np.std(arr)         # Calculates the standard deviation of the array.
+```
+Logical Operations
+```python
+greater_than_3 = arr > 3   # Creates a boolean array where True indicates elements greater than 3.
+```
+Reshapes the array to have 5 rows and 1 column
+```python
+reshaped = arr.reshape(5, 1)
+```
+Concatenates two arrays
+```python
+arr1 = np.array([1, 2])
+arr2 = np.array([3, 4])
+concat = np.concatenate((arr1, arr2))
+```
+## 🐼 Pandas 
+Import Pandas
+```python
+import pandas as pd
+```
+Creating DataFrames from a dictionary
+```python
+data = {"Name": ["Alice", "Bob", "Charlie"], "Age": [25, 30, 35]}
+df = pd.DataFrame(data)
+```
+Creating DataFrames from a list of lists
+```python
+data = [["Alice", 25], ["Bob", 30], ["Charlie", 35]]
+df = pd.DataFrame(data, columns=["Name", "Age"])
+```
+Read CSV file
+```python
+df = pd.read_csv("file.csv")
+```
+Save DataFrame to CSV
+```python
+df.to_csv("output.csv", index=False)
+```
+Viewing Data
+```python
+df.head()       # Displays the first 5 rows.
+df.tail()       # Displays the last 5 rows.
+df.info()       # Displays information about the DataFrame.
+df.describe()   # Generates summary statistics for numeric columns.
+```
+Selecting Data
+```python
+ages = df["Age"]  # Selects the "Age" column.
+first_row = df.loc[0]  # Selects the first row by label/index.
+first_row = df.iloc[0]  # Selects the first row by integer position.
+```
+Filtering Data
+```python
+filtered_df = df[df["Age"] > 30]  # Filter rows where age > 30
+```
+Add a New Column
+```python
+df["Salary"] = [50000, 60000, 70000]
+```
+Deleting Columns
+```python
+df = df.drop(columns=["Salary"])
+```
+Sorting
+```python
+df = df.sort_values(by="Age", ascending=True)  # Sort by Age in ascending order
+```
+Grouping Data
+```python
+grouped = df.groupby("Name").mean()  # Groups the DataFrame by "Name" and calculates the mean of numeric columns.
+```
+Detect missing values
+```python
+missing_values = df.isnull()
+```
+Fill missing values
+```python
+df["Age"] = df["Age"].fillna(30)
+```
+
 ## Other useful commands
 Generate random 32 bit hexadecimal number
 ```bash
