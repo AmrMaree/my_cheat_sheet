@@ -58,6 +58,20 @@ Configure user information
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
+Merge one branch into another
+
+```bash
+git checkout target-branch
+git merge source-branch
+```
+
+ Merge by overwriting the target branch with the source branch’s content
+
+```bash
+git checkout target-branch
+git reset --hard source-branch
+```
+
 
 ## Postgres commands in linux
 Connect to postgres user
